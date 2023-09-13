@@ -1,11 +1,7 @@
-let imageIndex = 1
 const images = document.querySelectorAll('.image')
 const dots = document.querySelectorAll('.dot')
 const texts = document.querySelectorAll('.text')
-
-function currentImage(n) {
-  showImages(imageIndex = n)
-}
+const controls = document.querySelector('.controls')
 
 function showImages(n) {
   let index
@@ -18,7 +14,16 @@ function showImages(n) {
   for(index = 0; index < texts.length; index++) {
     texts[index].classList.replace('active', 'hide')
   }
-  images[imageIndex - 1].classList.add('active')
-  texts[imageIndex - 1].classList.add('active')
-  dots[imageIndex - 1].classList.add('checked')
+  images[n - 1].classList.add('active')
+  texts[n - 1].classList.add('active')
+  dots[n - 1].classList.add('checked')
 }
+
+controls.addEventListener('click', (event) => {
+  if(event.target.classList.contains('dot')) {
+    showImages(event.target.id)
+  }
+  if(event.target.classList.contains('dot-wrapper')) {
+    showImages(event.target.children[0].id)
+  }
+})

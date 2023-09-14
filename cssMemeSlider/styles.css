@@ -101,3 +101,18 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .describtionsWithControls {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .controls {
+    order: -1;
+  }
+
+  .image {
+    width: 80%;
+  }
+}

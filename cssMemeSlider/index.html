@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssMemeSlider</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <div class="slider_container">
+    <img class="image fade active" id="image1" src="./memes/paint-me-a-cat.jpg" alt="paint me a cat">
+    <img class="image fade " id="image2" src="./memes/rat-with-plague.jpg" alt="rat with plague">
+    <img class="image fade" id="image3" src="./memes/silly-cat.jpg" alt="silly cat">
+    <img class="image fade" id="image4" src="./memes/this-is-your-spine.jpg" alt="this is your spine">
+    <div class="describtionsWithControls">
+      <div class="describtions">
+        <p class="text fade active">Paint me a cat</p>
+        <p class="text fade">Rat with gifts</p>
+        <p class="text fade">Don't eat cookies in bed</p>
+        <p class="text fade">Oops</p>
+      </div>
+      <div class="controls">
+        <button class="dot-wrapper" type="button">
+          <span class="dot checked" id="1"></span>
+        </button>
+        <button class="dot-wrapper" type="button">
+          <span class="dot" id="2"></span>
+        </button>
+        <button class="dot-wrapper" type="button">
+          <span class="dot" id="3"></span>
+        </button>
+        <button class="dot-wrapper" type="button">
+          <span class="dot" id="4"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

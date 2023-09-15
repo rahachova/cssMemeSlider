@@ -108,6 +108,10 @@
     width: 80%;
   }
 
+  .describtions {
+    align-self: flex-start;
+  }
+
   .controls {
     order: -1;
   }

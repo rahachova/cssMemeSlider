@@ -1,17 +1,22 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f1d99b73;
+}
+
 .slider_container {
-  padding: 1.25rem 0;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
-  background-color: #f1d99b73;
 }
 
 .image {
   display: none;
-  width: 50%;
+  max-width: 95%;
+  max-height: 75%;
   border-radius: 0.6rem;
 }
 
@@ -61,7 +66,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 95%;
+  height: 20%;
 }
 
 .describtions {
@@ -104,7 +110,7 @@
 @media screen and (max-width: 568px) {
   .describtionsWithControls {
     flex-direction: column;
-    width: 80%;
+    justify-content: center;
   }
 
   .describtions {
@@ -113,9 +119,5 @@
 
   .controls {
     order: -1;
-  }
-
-  .image {
-    width: 80%;
   }
 }
